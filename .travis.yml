@@ -1,6 +1,10 @@
 language: ruby
 rvm:
-- 2.0.0
-- 1.9.3
-- jruby-19mode
-- rbx-2
+- 2.3.5
+deploy:
+  provider: heroku
+  api_key:
+    secure: D+2AthhaWa0TVr+Qm5yIKhtM465FFo7Wm/H/x5kP6WYUYYzzc7c4rANfjLEZTGzvZs+EjJ4GkEBloPYRfZJVUiAAB/wWXEercrZ/PCfcbkbs26MRIxGA8WG6x/kNglUWm0lwHdKpsu9s9H+twnJOix7cjQ/gVZ6ua9HwEMku3ecmUcll0x2Ugkds2hPJvF3hidw+AglA/5zAC7WaGM3px3tZ9t9pnqfcTC02hgokPFeeuZeqg5/0S4KLL9dAURnpL2BsKyGXbKQTHNfW2TB/K2q0Y84JtMzRt/fzw3aJM1YIbL1FsWdL0TTTMTwg40wzqy1+4GXSvXthFk7+evPbMnMsFQLAm/VsSq3lt9Fr9sOfl90LZT42g++ew5x+WC9s3i8NLswiDjGXSAri91ZEJX+DD8aQmDZfRRMu7MUYjSOquxLj1nNd++rxAoz9gdcH26AkJRNLlHT5/k7MdrnC1sGoUrwUXXSoiyJ9sD4ZyW+McmgIjR0n86qSGKkkRwmPeD0y6PkXH2yszYCLg4RKhTIOu+uKDNC8m2ekqloZ3spTP6EgOA1opm1NpTZNf/27mBwXnvZ/QfVHWJKgNd3Y5OlFC63Lt2CfuVkh/UDtzyJ1GdJEe8NKHmeeY8qHZChdBMtMDzQjyZMi1dkH8O5grWkTUBsx27S5YPDN/VquWkI=
+  app: projet-adavid
+  on:
+repo: adavid1/projet
