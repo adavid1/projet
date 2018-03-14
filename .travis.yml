@@ -6,9 +6,4 @@ deploy:
   api_key:
     secure: YAGddA0yDZzJ9/9jmHPpinyysonXMD566Y2HYpsmRNNrZcTDy9f0DHmPxt+uw3cDJ6cZlsvhbpXfDjCDP+pGOfzlBDzz866B6eESE5XowcHb8nMCvYnH3OMkWJzOd+r5x/sj6FNKlLZk0o7jVEWHQsDnsO+G2jHU9Y0ZiNUplQpbHbCy1lab0VMmMwooqHRZOxhQq3V3UTFlWE5MSH6Z+mToHPH6V/LSwGWhaD4oLig9/NtPws7LpXBAuY/7yy4uoQ8kmSUsvoD04UuXmsosPu+uqbJ4d38+WzyoB87gaAZyp5mbKC5WHzTCmlpmLWS3zbyH0FkVF6cuq/7zgsHt9xkUm6dRSUW81JHJZq+TBHExisLgGlqPbk9Z+3fP2zzvJnroJoHc8JwmLr0GLRZgIPld9LfXkKoGsqworzzRLRSH+vbJwrl2QCDdl1tWOE87XwD2Wgpb4Sa8cZHVKuyU91XEySOJpZTJkLDEU+G7GQeC7uioU2SfUVtE/pJR7HKj0HPccdqJLb/GEfTmA82LK/u8Y2jnkZ9Qxwko9NTRakVzgdfxDBrdfI7OWkOqxl9/kX6tWx1mUrvWRnII5IEJ8wEEZu9bL9ydhYXBF3/4UVnpqg+RaiU3oF2oEbuUUc5kxp3t3X+Gf/7Jc1ahpCpPzWP+FD7c7TmPOMWy1JsKDEY=
   app: projet-adavid
-  on: 
-    repo: adavid1/projet
   run: "rake db:migrate"
-
-before_script:
-- psql -c 'create database db_test;' -U postgres
