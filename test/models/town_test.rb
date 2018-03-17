@@ -15,6 +15,6 @@ class TownTest < ActiveSupport::TestCase
   test "town does not exists is not valid" do
     unknown = Town.new
     unknown.name = 'MyString'
-    assert !belfort.valid?
+    assert !unknown.valid?
   end
 end
