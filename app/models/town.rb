@@ -4,7 +4,7 @@ class Town < ActiveRecord::Base
   
   private
   def load_position
-    places = Nominatim.search(ville).limit(1).first
+    places = Nominatim.search(town_name).limit(1).first
     if places
       self.latitude = places.lat
       self.longitude = places.lon
