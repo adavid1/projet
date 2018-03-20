@@ -2,6 +2,10 @@ class Town < ActiveRecord::Base
   before_validation :geocode
   validates :name, :latitude, :longitude, presence: true
  
+#  def meteo
+#    meteo =   
+#  end
+  
   private
   def geocode
     towns = Nominatim.search.city(self.name).limit(1)
