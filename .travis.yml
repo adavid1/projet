@@ -8,6 +8,8 @@ deploy:
   app: projet1-adavid
   on:
     repo: adavid1/projet
-  run : "rake db:migrate RAILS_ENV=production"
+  run : 
+- "rake db:reset"
+- "rake db:migrate RAILS_ENV=production"
 before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
