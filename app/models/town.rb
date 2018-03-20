@@ -2,9 +2,12 @@ class Town < ActiveRecord::Base
   before_validation :geocode
   validates :name, :latitude, :longitude, presence: true
  
-#  def meteo
-#    meteo =   
-#  end
+  def get_weather
+     darksky = ForecastIO.forecast(latitude, longitude, params: { lang: 'fr', units: 'si' }).currently
+     if darksky
+       return darksky
+     end
+end
   
   private
   def geocode
