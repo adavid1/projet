@@ -19,6 +19,12 @@ gem 'nominatim', '~> 0.0.6'
 
 gem 'forecast_io'
 
+group :test do
+  gem "simplecov"
+  gem "simplecov-console"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
+end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
